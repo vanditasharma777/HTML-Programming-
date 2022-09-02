@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p>Click the button to add a new element to the array.</p>
+<button onclick="myFunction()">CLICK</button>
+<p id="demo"></p>
+<script>
+var array = ["Hello", "Hi", "Welcome", ];
+document.getElementById("demo").innerHTML = array;
+function myFunction() {
+  array.push("Hey");
+  document.getElementById("demo").innerHTML = array;}
+</script>
+</body>
+</html>

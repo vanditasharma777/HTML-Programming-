@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<h3>GREATEST OF THREE NUMBERS</h3>
+<body>
+<p id="text">greatest no.</p>
+<script>
+var a,b,c,greatest;
+a=prompt("enter the value of a:");
+b=prompt("enter the value of b:");
+c=prompt("enter the value of c:");
+greatest=a>b?(b>c?b:c):(a>c?b:c);
+document.getElementById("text").innerHTML=greatest;
+</script>
+</body>
+</html>
