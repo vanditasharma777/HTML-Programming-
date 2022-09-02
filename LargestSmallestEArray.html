@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<h1>Largest and smallest element in the array</h1>
+</head>
+<body>
+<p id ="demo"></p>
+<p id ="demo1"></p>
+<p id ="demo2"></p>
+<p id ="demo3"></p>
+<script>
+var array=[2,6,76,45,3];
+document.getElementById("demo").innerHTML="<u>Actual Array</u>:"+array;
+array.sort();
+document.getElementById("demo1").innerHTML="<u>After Sort</u>:"+array;
+var m1=Math.max.apply(null,array);
+document.getElementById("demo2").innerHTML="<u>Largest element is</u>:"+m1;
+var s1=Math.min.apply(null,array);
+document.getElementById("demo3").innerHTML="<u>Smallest element is</u>:"+s1;
+</script>
+</body>
+</html>
+
