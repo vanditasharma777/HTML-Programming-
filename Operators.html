@@ -1,0 +1,60 @@
+<html>
+<head>
+<title>VARIOUS ARITHMETIC,LOGICAL AND BITWISE OPERATORS</title>
+</head>
+<body>
+<p style="font-size:30px;text-align:center;color:red;">HERE YOU WILL SEE DIFFERENT ARITHMETIC,LOGICAL AND BITWISE OPERATORS</p>
+<p id="demo"></p>
+<p id="hel"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+<p id="demo4"></p>
+<p id="demo5"></p>
+<p id="demo6"></p>
+<p id="demo7"></p>
+<p id="demo8"></p>
+<p id="demo9"></p>
+<p id="demo10"></p>
+<p id="hel2"></p>
+<p id="hel3"></p>
+
+<script>
+
+var x=prompt("ENTER A NUMBER");
+var y=prompt("ENTER A NUMBER");
+x = parseInt(x);
+y = parseInt(y);
+var c = parseInt(c);
+  c=x+y;
+var sub = x-y;
+var div = (x/y);
+var z = x*y;
+var l = x%y;
+var inc = ++x;
+var dec = --y;
+document.getElementById("demo").innerHTML="<p><b>The AND operator returns true if both expressions are true otherwise returns false:</b>" + (x<13 && y>12) + "</p>";
+document.getElementById("hel").innerHTML="<p><b>The OR operator returns true if any expression is true otherwise returns false:</b>" + (x<7||y>1) + "</p>";
+document.getElementById("demo2").innerHTML="<p><b>The NOT operator returns true for false statement and vice versa:</b>" + !(x==y) + "</p>";
+document.getElementById("demo3").innerHTML="<p><b>Addition Operation:</b>" + (c) + "</p>";
+document.getElementById("hel2").innerHTML="<p><b>SUBTRACTION Operation:</b>" + (sub) + "</p>";
+document.getElementById("hel3").innerHTML="<p><b>Division Operation:</b>" + (div) + "</p>;"
+document.getElementById("demo4").innerHTML="<p><b>Multiply Operation:</b>" + (z) + "</p>";
+
+document.getElementById("demo5").innerHTML="<p><b>Modulo Operation:</b>" + (1) + "</p>";
+
+document.getElementById("demo6").innerHTML="<p><b>Bitwise And Operation:</b>" + (x & y) +"</p>";
+
+document.getElementById("demo7").innerHTML="<p><b>Bitwise OR Operation:<b>" + (x | y) +"</p>";
+
+document.getElementById("demo8").innerHTML="<p><b>Bitwise NOT Operation:<b>" + (~x) +"</p>";
+
+document.getElementById("demo9").innerHTML="<p><b>Bitwise Left Shift Operation:</b>" + (x << y) +"</p>";
+
+document.getElementById("demo10").innerHTML="<p><b>Bitwise XOR Operation:</b>" + (x ^ y) + "</p>";
+
+</script>
+</body>
+</html>
+
+
+
