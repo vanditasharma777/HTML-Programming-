@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2>Output using JS Object</h2>
+<p id="demo1"></p>
+<P id="demo2"></p>
+<script>
+    var obj={
+        name:"The Chitkara University Act",
+        member:"Punjab State Legislature",
+        institution:"Chitkara University",
+        show:function()
+        { return this.institution + "was founded by the"+this.member+"under\""+this.name+"\"in 2010. ";} };
+        document.getElementById("demo1").innerHTML=obj.show();
+        obj.add="founded by Dr. Ashok k Chitkara and Dr. Madhu Chitkara in 1998.";
+        document.getElementById("demo2").innerHTML=obj.institution+" was "+obj.add;
+</script>
+</body>
+</html>

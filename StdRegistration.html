@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html><head>
+<style></style></head><body>
+<form name="myForm1" action = "3Q1.htmL" onsubmit = "return validateForm(this)">
+    <h1>Register</h1>
+    <p>Please fill in this form to create an account.</p>
+    <hr> <label><b>First Name:</b></label>
+     <input type="text" placeholder="Enter First Name" name="ffname"><br><br><br>
+     <label><b>Last Name:</b></label>
+     <input type="text" placeholder="Enter Last Name" name="flname"><br><br><br>
+     <label><b>DateOfBirth:</b></label>
+     <input type="date" placeholder="Enter DOB" name="fdob"><br><br><br>
+     <label><b>Email Id:</b></label>
+     <input type="email" placeholder="Enter Email" name="femail"><br>
+     <span id="emailerror"></span><br><br>
+     <label><b>Phone N0.:</b></label>
+     <input type="text" placeholder="Enter PhoneNo." name="fphone"><br>
+     <span id="phoneerror"></span><br><br>
+     <label><b>Address:</b></label>
+     <textarea rows="5" cols="20" name="ftextarea"></textarea><br><br><br>
+     <label><b>Password:</b></label>
+     <input type="password" placeholder="Enter Password" name="fpassword"><br><br><br>
+     <label><b>Repeat Password:</b></label>
+     <input type="password" placeholder="Repeat Password" name="fpasswordr" ><br><hr>
+ <button type="submit" class="registerbtn">Register</button>
+ <script> function validateForm(){
+ var d = document.forms["myForm1"]["femail"].value;
+ var e = document.forms["myForm1"]["fphone"].value;
+ var emailcheck=/^[A-Za-z_]{3,}@[A-Za-z]{3,}[.]{1}[A-Za-z.]{2,6}$/ ;
+ var phonecheck=/^[789][0-9]{9}$/ ;
+ if(d=="")
+ {alert("Fill Email Field");
+  return false;}
+ if(e=="")
+ {alert("Fill Phone No. Field");return false;}
+ if(emailcheck.test(d))
+ {document.getElementById("emailerror").innerHTML="";
+}else
+ { document.getElementById("emailerror").innerHTML="Invalid Email";
+  return false;}
+  if(phonecheck.test(e))
+ {document.getElementById("phonerror").innerHTML="";
+ }else
+ { document.getElementById("phoneerror").innerHTML="Invalid Email";
+  return false;}}

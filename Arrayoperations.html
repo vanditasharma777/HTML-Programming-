@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<style>
+</style>
+</head>
+<body>
+<p id="demo1"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+<p id="demo4"></p>
+<p id="demo5"></p>
+<p id="demo6"></p>
+<p id="demo7"></p>
+<p id="demo8"></p>
+<p id="demo9"></p>
+<p id="demo10"></p>
+<script>
+var subjects=["TOC","DBMS","SPM","Networking","Java","JavaScript","Python","OS","data_mining","NM","C Language","C++",
+              "Microprocessor","Al","C#","VB.net","Data-Structures","Computer_Graphics","Artifical_Intelligence","Computer Animation"];
+var subjects1=["Digital Electronics","Communication Systems"];
+var points=[25,36,87,99,100];
+document.getElementById("demo1").innerHTML="<u>Actual Array</u>:"+subjects;
+subjects.push("PHP");
+document.getElementById("demo2").innerHTML="<u>After Push()</u>:"+subjects;
+subjects.pop();
+document.getElementById("demo3").innerHTML="<u>After Pop()</u>:"+subjects;
+subjects.shift();
+document.getElementById("demo4").innerHTML="<u>After Shift()</u>:"+subjects;
+delete subjects[0];
+document.getElementById("demo5").innerHTML="<u>After Delete()</u>:"+subjects;
+subjects.splice(2,0,"Fortan","Ruby");
+document.getElementById("demo6").innerHTML="<u>After Splice()</u>:"+subjects;
+subjects.sort();
+document.getElementById("demo7").innerHTML="<u>After Sort()</u>:"+subjects;
+var s1=subjects.concat(subjects1);
+document.getElementById("demo8").innerHTML="<u>After Merge()</u>:"+s1;
+var s2=Math.max.apply(null,points);
+document.getElementById("demo9").innerHTML="<u>After Max()</u>:"+s2;
+var s3=Math.min.apply(null,points);
+document.getElementById("demo10").innerHTML="<u>After Min()</u>:"+s3;
+</script>
+</body>
+</html>

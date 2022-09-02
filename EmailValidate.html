@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<title>Registration Form</title>
+<script>
+	function validateForm(){
+var fname =document.forms.myform.fname.value;
+var lname =document.forms.myform.lname.value;
+var email =document.forms.myform.email.value;
+var address =document.forms.myform.address.value;
+var date =document.forms.myform.date.value;
+var contact =document.forms.myform.contact.value;
+
+
+function ValidateEmail(email)
+{
+var mformat=/^\w([\.-]/\w+)*@\w=([\.-]?\w+)*(\.\w{2,3})+$/;
+if(email.value.match(mformat))
+{
+	return true;
+}
+else{
+	alert("you have entered an invalid email address!");
+	email.focus();
+	return false;}}
+	</script>
+	<body>
+		<legend>Registration Form</legend>
+		<form name="myform" method="post" onsubmit="return ValidateEmail(email)">
+         First Name:<input type="text" name="fname"><br><br>
+         Last Name:<input type="text" name="lname"><br><br>
+         Email id:<input type="text" name="email"><br><br>
+         Address:<input type="text"name="address"><br><br>
+         Date of Birth:<input type="date" name="date" max "31-12-1990" min="01-01-2000"><br><br>
+         Contact No.:<input type="number" name="contact"><br><br>
+         <input type="submit" value="Submit" name="submit" onclick="return ValidateEmail(email)">
+     </form>
+	</body>
+	</html>
